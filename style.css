@@ -96,3 +96,22 @@ a{
     color: #2661a3;
     box-shadow: none;
 }
+.home .btn .social{
+    margin-left: 20px;
+    margin-top: 4px;
+}
+.home .btn .social a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #2661a3;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #2661a3;
+    margin: 0 8px;
+    transition: 0.5s;
+}
+.home .btn .social a:hover{
+    background: #2661a3;
+    color: #120821;
+    box-shadow: 0 0 10px #2661a3;
+}
