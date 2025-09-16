@@ -65,12 +65,45 @@ a{
     height: 100vh;
     padding: 60px 9% 0;
     color: white;
+    display: flex;
 }
 .home-info h1{
     font-size: 55px;
 }
 .home-info h2{
     font-size: 32px;
+    display: inline-block;
+}
+.home-info h2 span{
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: .7px #2661a3;
+    animation: display-text 15s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+@keyframes display-text{
+    25%,100%{
+        display: none;
+    }
+}
+.home-info h2 span::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid #2661a3;
+    color: #2661a3;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fill 4s linear infinite;
+}
+@keyframes fill{
+    10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
 }
 .home-info p{
     font-size: 16px;
@@ -98,7 +131,6 @@ a{
 }
 .home .btn .social{
     margin-left: 20px;
-    margin-top: 4px;
 }
 .home .btn .social a{
     display: inline-flex;
@@ -114,4 +146,8 @@ a{
     background: #2661a3;
     color: #120821;
     box-shadow: 0 0 10px #2661a3;
+}
+.home-img .img-box .img-item img{
+    width: 30vw;
+    height: 30vw;
 }
