@@ -60,3 +60,39 @@ a{
     background-color: #0f2136;
     color: aqua;
 }
+.home{
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: white;
+}
+.home-info h1{
+    font-size: 55px;
+}
+.home-info h2{
+    font-size: 32px;
+}
+.home-info p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+.home .btn{
+    display: flex;
+}
+.down{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #2661a3;
+    border: 2px solid #2661a3;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #2661a3;
+    font-size: 16px;
+    color: #120821;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.down:hover{
+    background: transparent;
+    color: #2661a3;
+    box-shadow: none;
+}
